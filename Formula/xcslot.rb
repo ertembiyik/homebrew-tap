@@ -1,16 +1,16 @@
 class Xcslot < Formula
   desc "Warm Xcode build slots for parallel coding agents"
   homepage "https://github.com/ertembiyik/xcslot"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   # brew style allows no url inside on_arm and on_intel.
   if Hardware::CPU.arm?
-    url "https://github.com/ertembiyik/xcslot/releases/download/v0.1.4/xcslot-darwin-arm64"
-    sha256 "7d5d42bad3c16c04a72c0b4e4f01f9c0d153b01692482b3bc3a9b3c41c75e19a"
+    url "https://github.com/ertembiyik/xcslot/releases/download/v0.1.5/xcslot-darwin-arm64"
+    sha256 "6c8758f47adc76e261b4586d8ff7c30c5f204cd66b4c7fa9b8a13e4029148db7"
   else
-    url "https://github.com/ertembiyik/xcslot/releases/download/v0.1.4/xcslot-darwin-x64"
-    sha256 "859eccf22f3f4f6ac1139b77c07aee149854620f5519e5d6d71d3490536748df"
+    url "https://github.com/ertembiyik/xcslot/releases/download/v0.1.5/xcslot-darwin-x64"
+    sha256 "6ce83601e56a279ea309c4c4d21f4ae0c6908d98c37e49605a1f49205cd58870"
   end
 
   depends_on :macos
